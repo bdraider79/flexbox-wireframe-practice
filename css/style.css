@@ -63,3 +63,24 @@ footer {
   height: 60px;
   font-size: 22px;
 }
+@media (min-width: 700px) {
+  .container {
+    width: min(900px, 92vw);
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-areas:
+      "header  header"
+      "aside   articles"
+      "footer  footer";
+    gap: 14px;
+  }
+
+  header { grid-area: header; }
+  aside  { grid-area: aside;  height: auto; min-height: 280px; }
+  .articles { grid-area: articles; }
+  footer { grid-area: footer; }
+
+  .articles article {
+    height: 90px;
+  }
+}
