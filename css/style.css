@@ -1,1 +1,65 @@
-@import url(".reset.css");
+body {
+  background: #9aa0a6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+  width: 320px;
+  margin: 24px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px; 
+}
+
+
+header,
+aside,
+footer,
+article {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+header {
+  background: #a02a73; 
+  height: 60px;
+  font-size: 20px;
+}
+
+
+.articles {
+  background: #2fb07d;
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
+.articles article {
+  background: #e3186f;
+  height: 80px;
+  font-size: 18px;
+}
+
+
+aside {
+  background: #0d5c8a; 
+  height: 60px;
+  font-size: 22px;
+}
+
+
+footer {
+  background: #e07a1a;
+  height: 60px;
+  font-size: 22px;
+}
